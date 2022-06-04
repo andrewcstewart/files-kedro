@@ -13,12 +13,12 @@ setup(
             "utilities/kedro/pyproject.yml",
             "utilities/kedro/.gitignore",
             "utilities/kedro/__init__.py",
-            "utilities/kedro/conf/*",
-            "utilities/kedro/data/*",          
-            "utilities/kedro/docs/*",          
-            "utilities/kedro/logs/*",          
-            "utilities/kedro/notebooks/*",          
-            "utilities/kedro/src/*",
+            "utilities/kedro/conf/**",
+            "utilities/kedro/data/**",          
+            "utilities/kedro/docs/**",          
+            "utilities/kedro/logs/**",          
+            "utilities/kedro/notebooks/**",          
+            "utilities/kedro/src/**",
         ]
     },
 )
