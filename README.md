@@ -100,9 +100,27 @@ Before you can run your kedro pipeline you will need to install its dependencies
 meltano invoke kedro:install
 ```
 
+To test your kedro pipeline by itself, you can use `kedro run`:
+
+```
+meltano run kedro:run
+```
+
 Then to incorporate the kedro pipeline as part of a meltano run-block you can include it in a `meltano run` command like so:
 
 ```
 meltano run tap-something target-somewhere dbt:run kedro:run
+```
+
+## Development
+
+For development purposes you can run the plugin within a local meltano environment.  Just follow the steps described above except set `pip_url: .` when prompted during installation of the file bundle.
+
+```
+meltano add files --custom kedro
+
+(namespace) [kedro]:
+(pip_url) [kedro]: .
+(executable) [.]:
 ```
 
