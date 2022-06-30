@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="files-kedro",
-    version="0.1",
+    version="0.1.1",
     description="Meltano project files for kedro",
     packages=find_packages(),
     package_data={
